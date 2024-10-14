@@ -1,0 +1,3 @@
+[submodule "01.Serverless-Web-Application-on-AWS"]
+	path = 01.Serverless-Web-Application-on-AWS
+	url = https://github.com/madhur-banger/Serverless-Web-Application-on-AWS
