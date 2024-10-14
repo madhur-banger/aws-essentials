@@ -1,3 +1,6 @@
 [submodule "Projects/Serverless-Web-Application-on-AWS"]
 	path = Projects/Serverless-Web-Application-on-AWS
 	url = https://github.com/madhur-banger/Serverless-Web-Application-on-AWS
+[submodule "Projects/Cloud-cost-optimization"]
+	path = Projects/Cloud-cost-optimization
+	url = https://github.com/madhur-banger/Cloud-cost-optimization
