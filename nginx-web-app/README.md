@@ -2,7 +2,7 @@
 
 # Deploy a Web App on Nginx Server using AWS App Runner
 
-![Alt text](image.png)
+![Alt text](image1.png)
 
 ## Overview
 
@@ -73,6 +73,8 @@ In this step, you will create a container image of a sample web app.
 
 ### Step 2: Push to Amazon ECR
 
+![Alt text](image2.png)
+
 In this step, you will create a private repository in Amazon ECR and push the container image you built in the previous module to the newly created repository.
 
 1. **Sign in** to the [AWS Management Console](https://aws.amazon.com/console/) and open the Amazon Elastic Container Registry at [ECR Console](https://console.aws.amazon.com/ecr/home).
@@ -106,6 +108,8 @@ In this step, you will create a private repository in Amazon ECR and push the co
 ### Step 3: Create AWS App Runner Service
 
 In this module, you will create an AWS App Runner service using the container image you built in the previous module.
+
+![Alt text](image3.png)
 
  ```bash
  aws apprunner create-service --service-name nginx-web-app-service \
