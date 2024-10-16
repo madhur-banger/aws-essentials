@@ -1,0 +1,29 @@
+{
+  "Rules": [
+    {
+      "Name": "DeleteStaleSnapshots",
+      "Description": "Triggers the Lambda function to delete stale snapshots",
+      "ScheduleExpression": "rate(1 day)",
+      "State": "ENABLED",
+      "Targets": [
+        {
+          "Arn": "arn:aws:lambda:REGION:ACCOUNT_ID:function:delete_snapshots",
+          "Id": "DeleteSnapshotsTarget"
+        }
+      ]
+    },
+    {
+      "Name": "CleanupUnusedIPs",
+      "Description": "Triggers the Lambda function to cleanup unused Elastic IPs",
+      "ScheduleExpression": "rate(7 days)",
+      "State": "ENABLED",
+      "Targets": [
+        {
+          "Arn": "arn:aws:lambda:REGION:ACCOUNT_ID:function:unused_ips_cleanup",
+          "Id": "CleanupIPsTarget"
+        }
+      ]
+    }
+  ]
+}
+

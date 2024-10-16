@@ -1,0 +1,11 @@
+{
+  "regions": ["us-east-1", "us-west-2"],
+  "cleanup_tags": {
+    "retain": false
+  },
+  "schedule": {
+    "delete_snapshots": "rate(1 day)",
+    "cleanup_unused_ips": "rate(7 days)"
+  }
+}
+

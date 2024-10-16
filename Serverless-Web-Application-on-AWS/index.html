@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serverless Web Application on AWS </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>AWS Serverless Web Application</h1>
+        <div class="counter">
+            <span class="counter-title">Views:</span>
+            <span class="counter-number" id="view-count">Loading...</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to the Project Documentation</h2>
+                <p>Explore the architecture and learn how we built a serverless web app using AWS Lambda, DynamoDB, and S3.</p>
+                <button class="scroll-button" onclick="scrollToSection()">Learn More</button>
+            </div>
+        </section>
+
+        <section id="documentation">
+            <h2>Project Overview</h2>
+            <p>This project showcases the development of a fully serverless web application using AWS services. The core
+                idea is to implement a serverless architecture where the backend logic, data storage, and static content
+                hosting are managed by AWS services, enabling scalability, cost efficiency, and minimal infrastructure
+                management.</p>
+            <p>With this project, you can understand how AWS services can be leveraged to build modern web applications that
+                are both robust and scalable. The primary services involved in this architecture are:</p>
+            <ul>
+                <li><strong>AWS Lambda:</strong> Executes backend logic without the need for provisioning or managing servers.
+                    Lambda functions run your code in response to events and automatically manage the compute resources,
+                    scaling up or down as needed.</li>
+                <li><strong>Amazon DynamoDB:</strong> A fully managed NoSQL database service that provides fast and
+                    predictable performance with seamless scalability. DynamoDB is used for storing and managing
+                    application data with high availability and durability.</li>
+                <li><strong>Amazon S3:</strong> Simple Storage Service (S3) provides scalable object storage for static
+                    content like HTML, CSS, JavaScript, and media files. It is used to host the frontend assets of the
+                    web application.</li>
+                <li><strong>Amazon CloudFront:</strong> A content delivery network (CDN) that distributes content globally,
+                    reducing latency and improving the performance of web applications by caching static assets at edge
+                    locations close to the user.</li>
+            </ul>
+
+            <h2>Architecture Overview</h2>
+            <p>The architecture leverages the following AWS services to build a robust, scalable, and highly available
+                application:</p>
+            <img src="Architecture.png" alt="Architecture Diagram" style="width: 100%; height: auto;">
+            <p>The architecture consists of:</p>
+            <ul>
+                <li><strong>AWS Lambda:</strong> Handles the backend logic, processing requests and interacting with
+                    DynamoDB. Lambda functions are triggered by API Gateway or other events and perform CRUD operations on
+                    the database.</li>
+                <li><strong>Amazon DynamoDB:</strong> Stores all application data, such as user information and other
+                    necessary data for the application. It provides fast and flexible data access, supporting key-value
+                    and document data structures.</li>
+                <li><strong>Amazon S3:</strong> Hosts the static assets of the application. The HTML, CSS, and JavaScript
+                    files are stored in an S3 bucket and served to users when they access the web application.</li>
+                <li><strong>Amazon CloudFront:</strong> Distributes the content from the S3 bucket to users worldwide,
+                    caching the static assets and reducing the load times of the application.</li>
+            </ul>
+
+            <h2>Project Workflow</h2>
+            <p>The project is divided into several key stages:</p>
+            <ol>
+                <li><strong>Create and configure a DynamoDB table:</strong> Start by defining the schema for the data you
+                    need to store. Configure the table's primary key and set up any necessary secondary indexes to
+                    support querying requirements.</li>
+                <li><strong>Develop AWS Lambda functions:</strong> Create Lambda functions to perform CRUD operations on the
+                    DynamoDB table. Each function will handle different aspects of the backend logic, such as creating,
+                    reading, updating, or deleting data.</li>
+                <li><strong>Host frontend assets on S3:</strong> Upload the static assets (HTML, CSS, JavaScript) to an S3
+                    bucket configured for static website hosting. Ensure the appropriate permissions and bucket policies are
+                    set to allow public access.</li>
+                <li><strong>Set up CloudFront:</strong> Configure a CloudFront distribution to cache and deliver the static
+                    content from the S3 bucket. This improves the performance and availability of your web application by
+                    reducing latency and providing global content delivery.</li>
+            </ol>
+
+            <h2>Expected Outcomes</h2>
+            <ul>
+                <li><strong>Serverless app leveraging AWS services:</strong> By completing this project, you will have
+                    built a fully serverless web application that utilizes AWS services for backend logic, data storage,
+                    and content delivery.</li>
+                <li><strong>Hands-on experience with Lambda and DynamoDB:</strong> You will gain practical experience in
+                    developing and deploying Lambda functions and working with DynamoDB for data management.</li>
+                <li><strong>Optimized content delivery using CloudFront:</strong> You will understand how to use CloudFront
+                    to distribute and cache content efficiently, improving the performance of your web application.</li>
+            </ul>
+
+            <h2>Key Learning Areas</h2>
+            <ul>
+                <li><strong>Serverless architecture design:</strong> Learn how to design and implement a serverless
+                    architecture that eliminates the need for server management and scales automatically with demand.</li>
+                <li><strong>Lambda functions and API Gateway integration:</strong> Understand how to create Lambda functions
+                    and integrate them with API Gateway to expose RESTful endpoints for your web application.</li>
+                <li><strong>NoSQL databases with DynamoDB:</strong> Explore the principles of NoSQL databases and how to use
+                    DynamoDB for fast and flexible data management.</li>
+                <li><strong>Hosting static content and optimizing delivery with S3 and CloudFront:</strong> Learn how to host
+                    static web assets on S3 and optimize content delivery using CloudFront to enhance the user experience.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Serverless App on AWS Documentation</p>
+        <p>Prepared by: Madhur</p>
+        <p>Email: <a href="mailto:madhur.cloudevops@gmail.com">madhur.cloudevops@gmail.com</a></p>
+    </footer>
+
+	<script src="script.js"></script>
+    
+</body>
+
+</html>
