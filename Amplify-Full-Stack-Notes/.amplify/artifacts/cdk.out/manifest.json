@@ -1,0 +1,1257 @@
+{
+  "version": "38.0.1",
+  "artifacts": {
+    "amplify-notesapp-madhur-sandbox-6ec9d73230.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "amplify-notesapp-madhur-sandbox-6ec9d73230.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "amplify-notesapp-madhur-sandbox-6ec9d73230": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "amplify-notesapp-madhur-sandbox-6ec9d73230.template.json",
+        "terminationProtection": false,
+        "tags": {
+          "amplify:deployment-type": "sandbox",
+          "created-by": "amplify"
+        },
+        "validateOnSynth": false,
+        "notificationArns": [],
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/dcbac76ce66405553ce1a92483c8cf253507826d1925b5244bc6254683e3fb09.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "amplify-notesapp-madhur-sandbox-6ec9d73230.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "amplify-notesapp-madhur-sandbox-6ec9d73230.assets"
+      ],
+      "metadata": {
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "amplify:deployment-type",
+                "Value": "sandbox"
+              },
+              {
+                "Key": "created-by",
+                "Value": "amplify"
+              }
+            ]
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/deploymentType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deploymentType"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "region"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/amplifyAuth/UserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPool4BA7F805"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/amplifyAuth/UserPoolAppClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthUserPoolAppClient2626C6F8"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/amplifyAuth/IdentityPool": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPool3FDE84CC"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/amplifyAuth/authenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthauthenticatedUserRoleD8DA3689"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/amplifyAuth/unauthenticatedUserRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthunauthenticatedUserRole2B524D9E"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/amplifyAuth/IdentityPoolRoleAttachment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyAuthIdentityPoolRoleAttachment045F17C8"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/amplifynotesappmadhursandbox6ec9d73230authamplifyAuthUserPool0814DCB4Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifynotesappmadhursandbox6ec9d73230authamplifyAuthUserPool0814DCB4Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/amplifynotesappmadhursandbox6ec9d73230authamplifyAuthUserPoolAppClient2DA19232Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifynotesappmadhursandbox6ec9d73230authamplifyAuthUserPoolAppClient2DA19232Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/amplifynotesappmadhursandbox6ec9d73230authamplifyAuthIdentityPool0E4BB404Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifynotesappmadhursandbox6ec9d73230authamplifyAuthIdentityPool0E4BB404Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/amplifynotesappmadhursandbox6ec9d73230authamplifyAuthauthenticatedUserRole6179E146Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifynotesappmadhursandbox6ec9d73230authamplifyAuthauthenticatedUserRole6179E146Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth/amplifynotesappmadhursandbox6ec9d73230authamplifyAuthunauthenticatedUserRoleE04E2262Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifynotesappmadhursandbox6ec9d73230authamplifyAuthunauthenticatedUserRoleE04E2262Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/auth.NestedStack/auth.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "auth179371D7"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/userPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "userPoolId"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/webClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "webClientId"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/identityPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "identityPoolId"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/authRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "authRegion"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/allowUnauthenticatedIdentities": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "allowUnauthenticatedIdentities"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/signupAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "signupAttributes"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/usernameAttributes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "usernameAttributes"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/verificationMechanisms": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "verificationMechanisms"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/passwordPolicyMinLength": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyMinLength"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/passwordPolicyRequirements": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "passwordPolicyRequirements"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/mfaConfiguration": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaConfiguration"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/mfaTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mfaTypes"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/socialProviders": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "socialProviders"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/oauthCognitoDomain": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthCognitoDomain"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/oauthScope": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthScope"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/oauthRedirectSignIn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignIn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/oauthRedirectSignOut": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthRedirectSignOut"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/oauthResponseType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthResponseType"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/oauthClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "oauthClientId"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/GraphQLAPI/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPI42A6FA33"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/GraphQLAPI/TransformerSchema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPITransformerSchemaFF50A789"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/GraphQLAPI/NONE_DS": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/GraphQLAPI/NONE_DS/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataGraphQLAPINONEDS684BF699"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NONE_DS"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/AmplifyManagedTableIsCompleteRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableIsCompleteRoleF825222C"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleB4E71DEA"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/AmplifyManagedTableOnEventRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyManagedTableOnEventRoleDefaultPolicyF6DABCB6"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-onEvent/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkonEvent1DFC2ECC"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/TableManagerCustomProvider/framework-isComplete/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TableManagerCustomProviderframeworkisComplete2E51021B"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRole470BE899"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachineRoleDefaultPolicy89F3836A"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/AmplifyTableWaiterStateMachine/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AmplifyTableWaiterStateMachine060600BC"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/reference-to-amplifynotesappmadhursandbox6ec9d73230dataamplifyDataGraphQLAPI39BDF474ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230dataamplifyDataGraphQLAPI39BDF474ApiId"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager/amplifynotesappmadhursandbox6ec9d73230dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent64A47895Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifynotesappmadhursandbox6ec9d73230dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent64A47895Arn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyTableManager.NestedStack/AmplifyTableManager.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResource86290833"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/HasEnvironmentParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "HasEnvironmentParameter"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/ShouldUseServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUseServerSideEncryption"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/ShouldUsePayPerRequestBilling": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePayPerRequestBilling"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/ShouldUsePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ShouldUsePointInTimeRecovery"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/NoteTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Note"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/NoteTable/Default/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NoteTable"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Note"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/CustomTableNoteTable": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Note"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/GetAttNoteTableStreamArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttNoteTableStreamArn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/GetAttNoteTableName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetAttNoteTableName"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/NoteIAMRole": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NoteIAMRole"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/NoteIAMRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NoteIAMRoleCA742F19"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NoteIAMRole"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/NoteDataSource": [
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NoteTable"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/NoteDataSource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NoteDataSource"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NoteTable"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/QuerygetNoteauth0Function/QuerygetNoteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetNoteauth0FunctionQuerygetNoteauth0FunctionAppSyncFunction1125F54B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetNoteauth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/QuerygetNotepostAuth0Function/QuerygetNotepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerygetNotepostAuth0FunctionQuerygetNotepostAuth0FunctionAppSyncFunctionBC9940CA"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerygetNotepostAuth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/QueryGetNoteDataResolverFn/QueryGetNoteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryGetNoteDataResolverFnQueryGetNoteDataResolverFnAppSyncFunction2F346125"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryGetNoteDataResolverFn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/queryGetNoteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GetNoteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.getNote"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/QuerylistNotesauth0Function/QuerylistNotesauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistNotesauth0FunctionQuerylistNotesauth0FunctionAppSyncFunction4C828F45"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistNotesauth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/QuerylistNotespostAuth0Function/QuerylistNotespostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QuerylistNotespostAuth0FunctionQuerylistNotespostAuth0FunctionAppSyncFunctionCEA378D3"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QuerylistNotespostAuth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/QueryListNotesDataResolverFn/QueryListNotesDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "QueryListNotesDataResolverFnQueryListNotesDataResolverFnAppSyncFunctionBD5C872B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "QueryListNotesDataResolverFn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/queryListNotesResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ListNoteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Query.listNotes"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/MutationcreateNoteinit0Function/MutationcreateNoteinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateNoteinit0FunctionMutationcreateNoteinit0FunctionAppSyncFunction336343A0"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateNoteinit0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/MutationcreateNoteauth0Function/MutationcreateNoteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateNoteauth0FunctionMutationcreateNoteauth0FunctionAppSyncFunction24439C2F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateNoteauth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/MutationcreateNotepostAuth0Function/MutationcreateNotepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationcreateNotepostAuth0FunctionMutationcreateNotepostAuth0FunctionAppSyncFunction6D427EC4"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationcreateNotepostAuth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/MutationCreateNoteDataResolverFn/MutationCreateNoteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationCreateNoteDataResolverFnMutationCreateNoteDataResolverFnAppSyncFunction591F5456"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationCreateNoteDataResolverFn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/mutationCreateNoteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CreateNoteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.createNote"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/MutationupdateNoteinit0Function/MutationupdateNoteinit0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateNoteinit0FunctionMutationupdateNoteinit0FunctionAppSyncFunction19D28B0F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateNoteinit0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/MutationupdateNoteauth0Function/MutationupdateNoteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateNoteauth0FunctionMutationupdateNoteauth0FunctionAppSyncFunction72CAF43F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateNoteauth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/MutationupdateNotepostAuth0Function/MutationupdateNotepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationupdateNotepostAuth0FunctionMutationupdateNotepostAuth0FunctionAppSyncFunction7DBB904D"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationupdateNotepostAuth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/MutationUpdateNoteDataResolverFn/MutationUpdateNoteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationUpdateNoteDataResolverFnMutationUpdateNoteDataResolverFnAppSyncFunctionBCC5D9E4"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationUpdateNoteDataResolverFn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/mutationUpdateNoteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UpdateNoteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.updateNote"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/MutationdeleteNoteauth0Function/MutationdeleteNoteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteNoteauth0FunctionMutationdeleteNoteauth0FunctionAppSyncFunction5FE2B4D0"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteNoteauth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/MutationdeleteNotepostAuth0Function/MutationdeleteNotepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationdeleteNotepostAuth0FunctionMutationdeleteNotepostAuth0FunctionAppSyncFunction5E0783EF"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationdeleteNotepostAuth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/MutationDeleteNoteDataResolverFn/MutationDeleteNoteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MutationDeleteNoteDataResolverFnMutationDeleteNoteDataResolverFnAppSyncFunction3FA3FDA0"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "MutationDeleteNoteDataResolverFn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/mutationDeleteNoteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeleteNoteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Mutation.deleteNote"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/SubscriptiononCreateNoteauth0Function/SubscriptiononCreateNoteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateNoteauth0FunctionSubscriptiononCreateNoteauth0FunctionAppSyncFunction853C832F"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateNoteauth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/SubscriptiononCreateNotepostAuth0Function/SubscriptiononCreateNotepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateNotepostAuth0FunctionSubscriptiononCreateNotepostAuth0FunctionAppSyncFunction2FE4DC1E"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononCreateNotepostAuth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/SubscriptionOnCreateNoteDataResolverFn/SubscriptionOnCreateNoteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnCreateNoteDataResolverFnSubscriptionOnCreateNoteDataResolverFnAppSyncFunction37D6FFF2"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnCreateNoteDataResolverFn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/subscriptionOnCreateNoteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononCreateNoteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onCreateNote"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/SubscriptiononUpdateNoteauth0Function/SubscriptiononUpdateNoteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateNoteauth0FunctionSubscriptiononUpdateNoteauth0FunctionAppSyncFunction2413D644"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateNoteauth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/SubscriptiononUpdateNotepostAuth0Function/SubscriptiononUpdateNotepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateNotepostAuth0FunctionSubscriptiononUpdateNotepostAuth0FunctionAppSyncFunction30ABF2EE"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononUpdateNotepostAuth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/SubscriptionOnUpdateNoteDataResolverFn/SubscriptionOnUpdateNoteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnUpdateNoteDataResolverFnSubscriptionOnUpdateNoteDataResolverFnAppSyncFunctionE4137817"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnUpdateNoteDataResolverFn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/subscriptionOnUpdateNoteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononUpdateNoteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onUpdateNote"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/SubscriptiononDeleteNoteauth0Function/SubscriptiononDeleteNoteauth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteNoteauth0FunctionSubscriptiononDeleteNoteauth0FunctionAppSyncFunction1B717F3B"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteNoteauth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/SubscriptiononDeleteNotepostAuth0Function/SubscriptiononDeleteNotepostAuth0Function.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteNotepostAuth0FunctionSubscriptiononDeleteNotepostAuth0FunctionAppSyncFunction7D4AF5B3"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptiononDeleteNotepostAuth0Function"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/SubscriptionOnDeleteNoteDataResolverFn/SubscriptionOnDeleteNoteDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptionOnDeleteNoteDataResolverFnSubscriptionOnDeleteNoteDataResolverFnAppSyncFunctionA1CED045"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "SubscriptionOnDeleteNoteDataResolverFn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/subscriptionOnDeleteNoteResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SubscriptiononDeleteNoteResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Subscription.onDeleteNote"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/NoteOwnerDataResolverFn/NoteOwnerDataResolverFn.AppSyncFunction": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NoteOwnerDataResolverFnNoteOwnerDataResolverFnAppSyncFunction66A7C72C"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "NoteOwnerDataResolverFn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/noteOwnerResolver": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NoteownerResolver"
+          },
+          {
+            "type": "graphqltransformer:resourceName",
+            "data": "Note.owner"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/reference-to-amplifynotesappmadhursandbox6ec9d73230dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResourceE25A6EC2Outputs.amplifynotesappmadhursandbox6ec9d73230dataamplifyDataAmplifyTableManagerTableManagerCustomProviderframeworkonEvent64A47895Arn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230dataamplifyDataAmplifyTableManagerNestedStackAmplifyTableManagerNestedStackResourceE25A6EC2Outputsamplifynotesappmadhursandbox6ec9d73230dataamplifyDataAmplifyTableManagerTableManagerCustomPro8D63A569"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/reference-to-amplifynotesappmadhursandbox6ec9d73230dataamplifyDataGraphQLAPI39BDF474ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230dataamplifyDataGraphQLAPI39BDF474ApiId"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/reference-to-amplifynotesappmadhursandbox6ec9d73230dataamplifyDataGraphQLAPINONEDS2131CBC7Name": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230dataamplifyDataGraphQLAPINONEDS2131CBC7Name"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/reference-to-amplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputs.amplifynotesappmadhursandbox6ec9d73230authamplifyAuthauthenticatedUserRole6179E146Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputsamplifynotesappmadhursandbox6ec9d73230authamplifyAuthauthenticatedUserRole6179E146Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/reference-to-amplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputs.amplifynotesappmadhursandbox6ec9d73230authamplifyAuthunauthenticatedUserRoleE04E2262Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputsamplifynotesappmadhursandbox6ec9d73230authamplifyAuthunauthenticatedUserRoleE04E2262Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note/reference-to-amplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputs.amplifynotesappmadhursandbox6ec9d73230authamplifyAuthIdentityPool0E4BB404Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputsamplifynotesappmadhursandbox6ec9d73230authamplifyAuthIdentityPool0E4BB404Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/Note.NestedStack/Note.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataNoteNestedStackNoteNestedStackResourceA19C7467"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucket9CCB4ACA"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketPolicyF1C1C548"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsBucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsBucketAutoDeleteObjectsCustomResource437F26F5"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/AwsCliLayer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentAwsCliLayerE322F905"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifyData/AmplifyCodegenAssets/AmplifyCodegenAssetsDeployment/CustomResource-1536MiB/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiB21775929"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/DynamoDBModelTableReadIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableReadIOPS"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/DynamoDBModelTableWriteIOPS": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBModelTableWriteIOPS"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/DynamoDBBillingMode": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBBillingMode"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/DynamoDBEnablePointInTimeRecovery": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnablePointInTimeRecovery"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/DynamoDBEnableServerSideEncryption": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DynamoDBEnableServerSideEncryption"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/LatestNodeRuntimeMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LatestNodeRuntimeMap"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+            "data": true
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-singleton",
+            "data": true
+          },
+          {
+            "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+            "data": 2
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleA41FC8C2"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBServiceRoleDefaultPolicyFF1C635B"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C1536MiBC5D8AB21"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/AMPLIFY_DATA_GRAPHQL_ENDPOINTParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYDATAGRAPHQLENDPOINTParameter1C2CBB16"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/reference-to-amplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputs.amplifynotesappmadhursandbox6ec9d73230authamplifyAuthUserPool0814DCB4Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputsamplifynotesappmadhursandbox6ec9d73230authamplifyAuthUserPool0814DCB4Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/reference-to-amplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputs.amplifynotesappmadhursandbox6ec9d73230authamplifyAuthauthenticatedUserRole6179E146Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputsamplifynotesappmadhursandbox6ec9d73230authamplifyAuthauthenticatedUserRole6179E146Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/reference-to-amplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputs.amplifynotesappmadhursandbox6ec9d73230authamplifyAuthunauthenticatedUserRoleE04E2262Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputsamplifynotesappmadhursandbox6ec9d73230authamplifyAuthunauthenticatedUserRoleE04E2262Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/reference-to-amplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputs.amplifynotesappmadhursandbox6ec9d73230authamplifyAuthIdentityPool0E4BB404Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputsamplifynotesappmadhursandbox6ec9d73230authamplifyAuthIdentityPool0E4BB404Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifynotesappmadhursandbox6ec9d73230dataamplifyDataGraphQLAPI39BDF474ApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifynotesappmadhursandbox6ec9d73230dataamplifyDataGraphQLAPI39BDF474ApiId"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifynotesappmadhursandbox6ec9d73230dataamplifyDataGraphQLAPI39BDF474GraphQLUrl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifynotesappmadhursandbox6ec9d73230dataamplifyDataGraphQLAPI39BDF474GraphQLUrl"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data/amplifynotesappmadhursandbox6ec9d73230dataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiBB6136CE0DestinationBucketArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifynotesappmadhursandbox6ec9d73230dataamplifyDataAmplifyCodegenAssetsAmplifyCodegenAssetsDeploymentCustomResource1536MiBB6136CE0DestinationBucketArn"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/data.NestedStack/data.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "data7552DF31"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/awsAppsyncApiId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiId"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/awsAppsyncApiEndpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncApiEndpoint"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/awsAppsyncAuthenticationType": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAuthenticationType"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/awsAppsyncRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncRegion"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/amplifyApiModelSchemaS3Uri": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyApiModelSchemaS3Uri"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/awsAppsyncAdditionalAuthenticationTypes": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "awsAppsyncAdditionalAuthenticationTypes"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/amplifyNotesDrive/Bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyNotesDriveBucket18812970"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/amplifyNotesDrive/Bucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyNotesDriveBucketPolicyDA61A3F7"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/amplifyNotesDrive/Bucket/AutoDeleteObjectsCustomResource/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifyNotesDriveBucketAutoDeleteObjectsCustomResourceD70667A3"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/LatestNodeRuntimeMap": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LatestNodeRuntimeMap"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+          {
+            "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+            "data": true
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/AMPLIFY_NOTES_DRIVE_BUCKET_NAMEParameter/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AMPLIFYNOTESDRIVEBUCKETNAMEParameter63173C1F"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/storageAccess4/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storageAccess472A5D2AC"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/reference-to-amplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputs.amplifynotesappmadhursandbox6ec9d73230authamplifyAuthauthenticatedUserRole6179E146Ref": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "referencetoamplifynotesappmadhursandbox6ec9d73230authNestedStackauthNestedStackResource0755D2EDOutputsamplifynotesappmadhursandbox6ec9d73230authamplifyAuthauthenticatedUserRole6179E146Ref"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage/amplifynotesappmadhursandbox6ec9d73230storageamplifyNotesDriveBucket18B3F2EERef": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "amplifynotesappmadhursandbox6ec9d73230storageamplifyNotesDriveBucket18B3F2EERef"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storage.NestedStack/storage.NestedStackResource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storage0EC3F24A"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/storageRegion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "storageRegion"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/bucketName": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "bucketName"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/buckets": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "buckets"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/amplify-notesapp-madhur-sandbox-6ec9d73230/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "amplify-notesapp-madhur-sandbox-6ec9d73230"
+    },
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+type Note @aws_iam @aws_cognito_user_pools {
+  name: String
+  description: String
+  image: String
+  id: ID!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  owner: String
+}
+
+input ModelStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelBooleanInput {
+  ne: Boolean
+  eq: Boolean
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+}
+
+input ModelIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  attributeExists: Boolean
+  attributeType: ModelAttributeTypes
+  size: ModelSizeInput
+}
+
+input ModelSubscriptionStringInput {
+  ne: String
+  eq: String
+  le: String
+  lt: String
+  ge: String
+  gt: String
+  contains: String
+  notContains: String
+  between: [String]
+  beginsWith: String
+  in: [String]
+  notIn: [String]
+}
+
+input ModelSubscriptionIntInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+  in: [Int]
+  notIn: [Int]
+}
+
+input ModelSubscriptionFloatInput {
+  ne: Float
+  eq: Float
+  le: Float
+  lt: Float
+  ge: Float
+  gt: Float
+  between: [Float]
+  in: [Float]
+  notIn: [Float]
+}
+
+input ModelSubscriptionBooleanInput {
+  ne: Boolean
+  eq: Boolean
+}
+
+input ModelSubscriptionIDInput {
+  ne: ID
+  eq: ID
+  le: ID
+  lt: ID
+  ge: ID
+  gt: ID
+  contains: ID
+  notContains: ID
+  between: [ID]
+  beginsWith: ID
+  in: [ID]
+  notIn: [ID]
+}
+
+enum ModelAttributeTypes {
+  binary
+  binarySet
+  bool
+  list
+  map
+  number
+  numberSet
+  string
+  stringSet
+  _null
+}
+
+input ModelSizeInput {
+  ne: Int
+  eq: Int
+  le: Int
+  lt: Int
+  ge: Int
+  gt: Int
+  between: [Int]
+}
+
+enum ModelSortDirection {
+  ASC
+  DESC
+}
+
+type ModelNoteConnection @aws_iam @aws_cognito_user_pools {
+  items: [Note]!
+  nextToken: String
+}
+
+input ModelNoteFilterInput {
+  name: ModelStringInput
+  description: ModelStringInput
+  image: ModelStringInput
+  id: ModelIDInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  and: [ModelNoteFilterInput]
+  or: [ModelNoteFilterInput]
+  not: ModelNoteFilterInput
+  owner: ModelStringInput
+}
+
+type Query {
+  getNote(id: ID!): Note @aws_iam @aws_cognito_user_pools
+  listNotes(filter: ModelNoteFilterInput, limit: Int, nextToken: String): ModelNoteConnection @aws_iam @aws_cognito_user_pools
+}
+
+input ModelNoteConditionInput {
+  name: ModelStringInput
+  description: ModelStringInput
+  image: ModelStringInput
+  and: [ModelNoteConditionInput]
+  or: [ModelNoteConditionInput]
+  not: ModelNoteConditionInput
+  createdAt: ModelStringInput
+  updatedAt: ModelStringInput
+  owner: ModelStringInput
+}
+
+input CreateNoteInput {
+  name: String
+  description: String
+  image: String
+  id: ID
+}
+
+input UpdateNoteInput {
+  name: String
+  description: String
+  image: String
+  id: ID!
+}
+
+input DeleteNoteInput {
+  id: ID!
+}
+
+type Mutation {
+  createNote(input: CreateNoteInput!, condition: ModelNoteConditionInput): Note @aws_iam @aws_cognito_user_pools
+  updateNote(input: UpdateNoteInput!, condition: ModelNoteConditionInput): Note @aws_iam @aws_cognito_user_pools
+  deleteNote(input: DeleteNoteInput!, condition: ModelNoteConditionInput): Note @aws_iam @aws_cognito_user_pools
+}
+
+input ModelSubscriptionNoteFilterInput {
+  name: ModelSubscriptionStringInput
+  description: ModelSubscriptionStringInput
+  image: ModelSubscriptionStringInput
+  id: ModelSubscriptionIDInput
+  createdAt: ModelSubscriptionStringInput
+  updatedAt: ModelSubscriptionStringInput
+  and: [ModelSubscriptionNoteFilterInput]
+  or: [ModelSubscriptionNoteFilterInput]
+  owner: ModelStringInput
+}
+
+type Subscription {
+  onCreateNote(filter: ModelSubscriptionNoteFilterInput, owner: String): Note @aws_subscribe(mutations: ["createNote"]) @aws_iam @aws_cognito_user_pools
+  onUpdateNote(filter: ModelSubscriptionNoteFilterInput, owner: String): Note @aws_subscribe(mutations: ["updateNote"]) @aws_iam @aws_cognito_user_pools
+  onDeleteNote(filter: ModelSubscriptionNoteFilterInput, owner: String): Note @aws_subscribe(mutations: ["deleteNote"]) @aws_iam @aws_cognito_user_pools
+}

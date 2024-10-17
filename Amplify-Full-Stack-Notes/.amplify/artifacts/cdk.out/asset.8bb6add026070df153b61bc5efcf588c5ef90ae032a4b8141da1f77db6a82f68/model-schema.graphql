@@ -1,0 +1,6 @@
+type Note @model @auth(rules: [{allow: owner, ownerField: "owner"}])
+{
+  name: String
+  description: String
+  image: String
+}

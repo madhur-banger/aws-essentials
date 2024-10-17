@@ -1,0 +1,51 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: CloudFormation template for an App Runner service using a Docker image from ECR.
+
+Resources:
+  AppRunnerService:
+    Type: AWS::AppRunner::Service
+    Properties:
+      ServiceName: "nginx-web-app-dev"
+      InstanceConfiguration:
+        Memory: "2 GB"
+        Cpu: "1 vCPU"
+      SourceConfiguration:
+        ImageRepository:
+          ImageIdentifier: "412381736408.dkr.ecr.us-east-1.amazonaws.com/nginx-web-app:latest"
+          ImageRepositoryType: "ECR"
+      HealthCheckConfiguration:
+        Path: "/"
+        UnhealthyThreshold: "3"
+        Timeout: "5"
+        HealthyThreshold: "3"
+        Interval: "10"
+
+  AppRunnerECRAccessRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: "AppRunnerECRAccessRole-dev-us-east-1-412381736408"
+      Policies:
+        - PolicyName: "ECRAccessPolicy"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Action:
+                  - "ecr:GetAuthorizationToken"
+                  - "ecr:BatchCheckLayerAvailability"
+                  - "ecr:GetDownloadUrlForLayer"
+                  - "ecr:BatchGetImage"
+                Resource: "*"
+                Effect: "Allow"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Action: "sts:AssumeRole"
+            Effect: "Allow"
+            Principal:
+              Service: "build.apprunner.amazonaws.com"
+
+Outputs:
+  AppRunnerServiceUrl:
+    Description: "URL of the App Runner service"
+    Value: !GetAtt AppRunnerService.ServiceUrl
+
